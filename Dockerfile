@@ -6,8 +6,9 @@ WORKDIR /opt
 # Install rclone
 RUN curl https://rclone.org/install.sh | bash
 
+# Switch back to notebook user
 USER $NB_USER
-WORKDIR /home/$NB_USER
+WORKDIR /home/${NB_USER}
 
 # Install packages via conda-forge
 RUN conda install -y -c conda-forge -n base \
