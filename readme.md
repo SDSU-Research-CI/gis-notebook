@@ -1,6 +1,7 @@
 # GIS Notebook
+Jupyter Notebook container image for GIS.
 
-This Jupyter Notebook image contains the following software in addition to its base image:
+## Software Inluded
 - beautifulsoup4
 - boto3
 - eo-learn
@@ -19,4 +20,4 @@ This Jupyter Notebook image contains the following software in addition to its b
 - sentinelhub
 - xeus-python
 
-This image is based upon the [National Research Platform's version of the Jupyter Stack PRP image](https://gitlab.nrp-nautilus.io/prp/jupyter-stack/-/tree/prp/images/prp-notebook)
+This image is based upon the [Jupyter Stack PyTorch image](https://github.com/jupyter/docker-stacks/tree/main/images/pytorch-notebook)
