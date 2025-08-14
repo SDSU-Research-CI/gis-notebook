@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=quay.io/jupyter/pytorch-notebook:cuda12-2024-07-29
+ARG BASE_IMAGE=quay.io/jupyter/pytorch-notebook:cuda12-2025-07-07
 FROM ${BASE_IMAGE}
 
 USER root
@@ -14,7 +14,6 @@ WORKDIR /home/${NB_USER}
 # Install packages via conda-forge
 RUN mamba install -y -c conda-forge -n base \
     boto3 \
-    # eo-learn \
     geopandas \
     geoplot \
     laspy \
